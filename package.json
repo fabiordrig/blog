@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"yarn posts\" \"yarn comments\" \"yarn client\"",
+    "client": "cd client && yarn start",
+    "posts": "cd posts && nodemon",
+    "comments": "cd comments && nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiordrig/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiordrig/blog/issues"
+  },
+  "homepage": "https://github.com/fabiordrig/blog#readme"
+}
