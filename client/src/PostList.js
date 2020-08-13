@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 import CommentCreate from "./CommentCreate";
 import CommentList from "./CommentList";
 
-function PostList() {
+export default () => {
   const [posts, setPosts] = useState({});
 
   const fetchPosts = async () => {
@@ -38,6 +37,4 @@ function PostList() {
       {renderedPosts}
     </div>
   );
-}
-
-export default PostList;
+};

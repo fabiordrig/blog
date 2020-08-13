@@ -9,7 +9,8 @@
     "posts": "cd posts && nodemon",
     "comments": "cd comments && nodemon",
     "event-bus": "cd event-bus && nodemon",
-    "query": "cd query && nodemon"
+    "query": "cd query && nodemon",
+    "moderation": "cd moderation && nodemon"
   },
   "repository": {
     "type": "git",
