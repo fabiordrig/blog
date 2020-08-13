@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const CommentCreate = ({ postId }) => {
+export default ({ postId }) => {
   const [content, setContent] = useState("");
 
   const onSubmit = async (event) => {
@@ -13,6 +13,7 @@ const CommentCreate = ({ postId }) => {
 
     setContent("");
   };
+
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -24,10 +25,8 @@ const CommentCreate = ({ postId }) => {
             className="form-control"
           />
         </div>
-        <button className="btn-primary">Submit</button>
+        <button className="btn btn-primary">Submit</button>
       </form>
     </div>
   );
 };
-
-export default CommentCreate;
